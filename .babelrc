@@ -1,0 +1,11 @@
+{
+    "presets": ["@babel/preset-env"]
+}
+// @babel/plugin-transform-runtime
+// @babel/plugin-proposal-class-properties
+// @babel/runtime
+// 这三个是干嘛的？
+// another question is, I didn't use es2015, I did use es6 module grammer
+// and no error, everything works fine? wtf?
+// As of Babel v6, all the yearly presets have been deprecated. We recommend using @babel/preset-env instead.
+// it turns out that preset has been updated, and we don't need es2015 anymore.

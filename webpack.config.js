@@ -1,3 +1,4 @@
+// stopped at lec19
 const path = require('path');
 // path source code?
 const config = {
@@ -10,7 +11,13 @@ const config = {
     module: {
         rules: [
             {
-                use: 'babel-loader'
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader'
+                    }
+                ]
             }
         ]
     }

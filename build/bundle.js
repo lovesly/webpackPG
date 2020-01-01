@@ -86,14 +86,26 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/image_viewer.js":
+/*!*****************************!*\
+  !*** ./src/image_viewer.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var image = document.createElement('img');\nimage.src = 'http://lorempixel.com/400/400';\ndocument.body.appendChild(image);\n\n//# sourceURL=webpack:///./src/image_viewer.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const { sum } = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\r\nconsole.log(sum(4, 5));\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\n/* harmony import */ var _image_viewer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./image_viewer */ \"./src/image_viewer.js\");\n/* harmony import */ var _image_viewer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_image_viewer__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconsole.log(Object(_sum__WEBPACK_IMPORTED_MODULE_0__[\"sum\"])(4, 5));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -101,10 +113,11 @@ eval("const { sum } = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\r\ncon
 /*!********************!*\
   !*** ./src/sum.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: sum */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const sum = (a, b) => a + b;\r\nmodule.exports = {\r\n    sum,\r\n};\n\n//# sourceURL=webpack:///./src/sum.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sum\", function() { return sum; });\nvar sum = function sum(a, b) {\n  return a + b;\n};\n\n//# sourceURL=webpack:///./src/sum.js?");
 
 /***/ })
 
