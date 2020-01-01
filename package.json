@@ -1,0 +1,25 @@
+{
+  "name": "webpackpg",
+  "version": "1.0.0",
+  "description": "\"# webpackPG\" \r 一直以来懒得搞。现在其实有多个端，家里的windows，出租屋的mac，以及以后的 linux，或者新的mac\r 多套工作环境是不一样的。应该想一下，是搞个 vscode 的同步插件，还是单独以项目为单位上传github，还是干脆直接把工作目录上传了？",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovesly/webpackPG.git"
+  },
+  "author": "zz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lovesly/webpackPG/issues"
+  },
+  "homepage": "https://github.com/lovesly/webpackPG#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
