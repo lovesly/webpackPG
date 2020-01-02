@@ -1,3 +1,6 @@
+// setup node --inspect, attach in launch.json
+// attach the debugging process to another port, so that you can debug it with chrome
+// 详情，参考 狼书卷1
 const http = require('http');
 
 http.createServer((req, res) => {
