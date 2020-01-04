@@ -1,5 +1,7 @@
 // stopped at lec19
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 // path source code?
 const config = {
     entry: './src/index.js',
@@ -22,10 +24,16 @@ const config = {
             {
                 test: /\.css$/,
                 exclude: /node_modules/,
-                use: ['style-loader', 'css-loader']
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader'
+                })
             }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin('styles.css'),
+    ]
 };
 
 module.exports = config;
