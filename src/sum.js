@@ -1,1 +1,2 @@
-export const sum = (a, b) => a + b;
+import _ from 'lodash';
+export const sum = _.add;

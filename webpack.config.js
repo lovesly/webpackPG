@@ -44,6 +44,24 @@ const config = {
             }
         ]
     },
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+            minSize: 0,
+            cacheGroups: {
+                vendors: {
+                    test: /[\\/]node_modules[\\/]/,
+                    priority: -10
+                },
+                default: {
+                    minChunks: 1,
+                    priority: -20,
+                    reuseExistingChunk: true,
+                    filename: 'common.js'
+                }
+            }
+        }
+    },
     plugins: [
         new ExtractTextPlugin('styles.css'),
     ]
