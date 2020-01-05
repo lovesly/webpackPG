@@ -1,6 +1,16 @@
+import big from '../assets/large.jpg';
+import medium from '../assets/medium.jpg';
+import small from '../assets/small.jpg';
 import '../styles/image_viewer.css';
 
+
 const image = document.createElement('img');
-image.src = 'http://lorempixel.com/400/400';
+// image.src = 'http://lorempixel.com/400/400';
+image.src = small;
 
 document.body.appendChild(image);
+
+// not showing due to static assets path issue.
+const image2 = document.createElement('img');
+image2.src = big;
+document.body.appendChild(image2);
